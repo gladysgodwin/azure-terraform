@@ -16,19 +16,19 @@ This project is designed to provision infrastructure in Azure using an Iac tool 
 This infrastructure is deployed within a resource group, with all components integrated through a VNet for network isolation.
 
 #### Resources Created
-- Virtual Network (VNet)
+- Virtual Network (VNet):
   Used for connecting different resources in a secure manner. We are using an existing Vnet.
-- Bastion Host
+- Bastion Host:
   Provides secure remote access to Windows Server instances.
-- Windows Server 2019 & 2022
+- Windows Server 2019 & 2022:
   Windows Server instances deployed for specific applications and tasks.
-- Azure Key Vault
+- Azure Key Vault:
   Stores secrets and provides secure access to other resources (e.g., SQL Database).
-- SQL Database
+- SQL Database:
   Managed SQL server for data storage, accessed securely using Managed Identity.
-- Managed Identity
+- Managed Identity:
   Used by the Windows Servers and Key Vault for secure resource communication.
-- Azure Storage Account
+- Azure Storage Account:
   Provides scalable storage for various data needs.
 
 The Terraform project is modularized for reusability and flexibility.
